@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+    font-family: "Poppins", sans-serif;
+}
+
+.containor{
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.headings{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:justify;
+    justify-content: space-around;
+    margin-top: 2em;
+}
+.headings h1{
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 80;
+    color: rgba(0, 0, 0, 0.452);
+}
+.headings h2{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.80px;
+    margin-bottom: 0.5em;
+}
+.headings p{
+    max-width: 500px;
+    font-weight: 200;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.452);
+    margin-bottom: 2em;
+}
+.cards-grid {
+    display: grid;
+    grid-template-areas:
+    "one"
+    "tow"
+    "three"
+    "four";
+    gap: 1.5em;
+}
+
+/*===============================
+        grid arias
+        cards centering
+==============================*/
+.card-border-color1{
+    grid-area: one;
+    border-top:4px solid hsl(180, 62%, 55%);;
+}
+.card-border-color2{
+    grid-area: tow ;
+    border-top:4px  solid hsl(0, 78%, 62%) ;
+}
+.card-border-color3{
+    grid-area: three;
+    border-top:4px  solid hsl(34, 97%, 64%);
+}
+.card-border-color4{
+    grid-area:four;
+    border-top:4px  solid hsl(212, 86%, 64%);
+}
+
+/*===============================
+        grid arias
+        cards centering
+==============================*/
+.main-card {
+    max-width:280px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0.5em 1em 0.5em rgba(205, 227, 234, 0.527);
+    padding: 1em 2em 2em 2em;
+    border-radius: 0.5em;
+}
+.main-card h2{
+    color: rgba(0, 0, 0, 0.687);
+    font-size: 1.3em;
+    margin-bottom: 0.2em;
+    font-weight: 550;
+}
+.main-card p{
+    font-size: 0.70em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.452);
+    margin-bottom: 2em;
+}
+.main-card img{
+    margin-left: auto;
+}
+   @media only screen and (min-width:700px) {
+    .cards-grid {
+        display: grid;
+        grid-template-columns: 1fr  1fr 1fr;
+        grid-template-areas:
+        ". tow ."
+        "one tow four"
+        "one three four"
+        ". three ."
+    }
+    .headings h1, .headings h2{
+        font-size: 2em;
+    }
+   }
+
