@@ -87,6 +87,7 @@ body{
     box-shadow: 0.5em 1em 0.5em rgba(205, 227, 234, 0.527);
     padding: 1em 2em 2em 2em;
     border-radius: 0.5em;
+    color:white;
 }
 .main-card h2{
     color: rgba(0, 0, 0, 0.687);
