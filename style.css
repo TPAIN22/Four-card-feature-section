@@ -73,6 +73,7 @@ body{
 .card-border-color4{
     grid-area:four;
     border-top:4px  solid hsl(212, 86%, 64%);
+    bacground-color:white;
 }
 
 /*===============================
