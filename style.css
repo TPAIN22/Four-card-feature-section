@@ -61,19 +61,22 @@ body{
 .card-border-color1{
     grid-area: one;
     border-top:4px solid hsl(180, 62%, 55%);;
+     background:white;
 }
 .card-border-color2{
     grid-area: tow ;
     border-top:4px  solid hsl(0, 78%, 62%) ;
+     background:white;
 }
 .card-border-color3{
     grid-area: three;
     border-top:4px  solid hsl(34, 97%, 64%);
+     background:white;
 }
 .card-border-color4{
     grid-area:four;
     border-top:4px  solid hsl(212, 86%, 64%);
-    bacground-color:white;
+     background:white;
 }
 
 /*===============================
