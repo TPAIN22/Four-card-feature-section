@@ -5,7 +5,9 @@
     font: inherit;
     font-family: "Poppins", sans-serif;
 }
-
+body{
+    background:hsl(229, 6%, 66%);
+}
 .containor{
     padding: 2em;
     display: flex;
